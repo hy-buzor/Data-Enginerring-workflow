@@ -183,6 +183,7 @@ print('connection established successfully')
 ftp = ssh_client.open_sftp()
 
 files = ftp.listdir("download")
+print(files)
 
 for i, file in enumerate(files):
     if file.endswith('.pdf'):
